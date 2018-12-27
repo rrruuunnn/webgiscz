@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>兴趣爱好</title>
+
+
+
+      <link rel="stylesheet" href="css/style.css">
+	<style>
+	body{
+	background:linear-gradient(to bottom right,yellow,red);
+	}
+	#div1{
+
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: solid 1px #434343;
+	}
+	.Left{
+	width:25%;
+	float:left;
+	}
+	.Right{
+	width:75%;
+	float:right;
+	}
+	#div2{
+	display:none;
+	}
+	#div3{
+	display:none;
+	}
+	</style>
+
+  <style media="screen">
+    *{
+     padding: 0;
+     margin: 0;
+    }
+    ul,li {
+     list-style: none;
+    }
+    img {
+     vertical-align: top;
+    }
+    #box{
+     width: 800px;
+     height: 300px;
+     margin: 20px auto;
+     background-color: pink;
+     position: relative;
+     overflow: hidden;
+    }
+    #box ul {
+     width: 2800px;
+     position: absolute;
+     left: 0;
+     top: 0;
+    }
+    #box li {
+     float: left;
+    }
+    .aa {
+     width: 480px;
+     height: 320px;
+    }
+    .li-1{
+     background-color: #f6e659;
+    }
+    .li-2{
+     background-color: #57fa4f;
+    }
+    .li-3{
+     background-color: #3a8ef1;
+    }
+    .li-4{
+     background-color: #c057f1;
+    }
+   </style>
+
+</head>
+
+<body>
+<div style="text-align:center;clear:both">
+
+</div>
+  	<div class="container">
+
+		<h1>兴趣爱好</h1>
+
+		<h2>Example</h2>
+		<nav class="nav nav5">
+			<ul>
+				<li>
+					<a href="#">喜欢的明星</a>
+					<ul>
+						<li><a href="#" onclick="showHuGe();">胡歌</a></li>
+						<li><a href="#" onclick="showZhaoLiYing();">赵丽颖</a></li>
+						<li><a href="#" onclick="showlinjunjie();">林俊杰</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">喜欢的音乐</a>
+					<ul>
+						<li><a href="#" onclick="showSong1();">偏爱</a></li>
+						<li><a href="#" onclick="showSong2();">我们的爱</a></li>
+						<li><a href="#" onclick="showSong3();">踏浪</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">喜欢的风景</a>
+					<ul>
+						<li><a href="#" onclick="showlandscape1();">峨眉山</a></li>
+						<li><a href="#" onclick="showlandscape2();">九寨沟</a></li>
+						<li><a href="#" onclick="showlandscape3();">长城</a></li>
+					</ul>
+				</li>
+
+				<li>
+					<a href="#" onclick="Time_Dancing();">其他</a>
+					<ul>
+
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+	</div>
+
+  <div id="div1" class="container">
+
+  	<div class="Left"><img id="img1" src="images/胡歌.jpg" style="margin:10px;"></div>
+	<div class="Right" id="intro1">胡歌，1982年9月20日出生于上海市徐汇区，中国内地演员、歌手。1996年，14岁的胡歌便成为上海教育电视台的小主持人，2005年毕业于上海戏剧学院表演系，同年在仙侠剧《仙剑奇侠传》中塑造了“李逍遥”一角，并演唱该剧插曲《六月的雨》《逍遥叹》 [1-2]  。2006年8月遭受严重车祸，2007年6月复出 [3]  。2009年主演仙侠剧《仙剑奇侠传三》 [4]  。2010年主演的穿越剧《神话》在央视八套播出 [5]  。2011年参演历史题材电影《辛亥革命》提名大众电影百花奖“最佳新人奖” [6-7]  。2012年主演玄幻剧《轩辕剑之天之痕》 [8]  。2013年主演两部话剧，凭借《如梦之梦》获得北京丹尼国际舞台表演艺术奖“最佳男演员奖” [9]  。2014年参演战争剧《四十九日·祭》提名上海电视节白玉兰奖“最佳男配角奖” [10-11]  。2015年主演的谍战剧《伪装者》、古装剧《琅琊榜》、都市剧《大好时光》相继播出，获得中国电视剧飞天奖“优秀男演员提名奖”、上海电视节白玉兰奖“最佳男主角奖”、中国电视金鹰奖“观众喜爱的男演员奖”、中国金鹰电视艺术节“最具人气男演员奖”等奖项 [12-16]  。2016年成为上海旅游形象大使，登上央视春晚演唱歌曲《相亲相爱》 [17-18]  。2017年二度登上央视春晚演唱歌曲《在此刻》，获得共青团中央“全国向上向善好青年”崇义友善好青年称号，2018年凭借都市剧《猎场》二度提名上海电视节白玉兰奖“最佳男主角奖” [19-22]  。</div>
+	<div><a id="point1" href="https://baike.baidu.com/item/%E8%83%A1%E6%AD%8C/312718?fr=aladdin" target="view_window" style="cursor:pointer;">点击查看详情</a></div>
+  </div>
+
+  <div id="div2" class="container">
+  	<div class="Left"><img id="img2" src="images/张芸京.png"></div>
+	<div class="Right" id="intro2">
+	<audio id="mp3" loop="loop" controls="true" autoplay="false" src="songs/偏爱-张芸京.mp3"></audio>
+	<a id="solution" href="https://search.bilibili.com/all?keyword=%E5%81%8F%E7%88%B1&from_source=banner_search" target="view_window" style=" cursor:pointer;"><font color="blue">如不能正常播放，请点击这里</font></a>
+	</div>
+  </div>
+
+  <div class="container" id="div3" style="width:480px;height:320px; ">
+	<div style="width:100%;float:left; margin:0px;padding:0px;">
+	<img id="img3" src="images/峨眉山.jpg" title="点击查看更多关于 峨眉山 的信息" style="cursor:pointer;" onclick="goemeishan();">
+  </div>
+</div>
+
+<div id="box">
+    <ul>
+     <li class="li-1 aa"><img id="pic1" src="images/胡歌1.jpg"></li>
+     <li class="li-2 aa"><img id="pic2" src="images/胡歌2.jpg"></li>
+     <li class="li-3 aa"><img id="pic3" src="images/胡歌3.jpg"></li>
+     <li class="li-4 aa"><img id="pic4" src="images/胡歌4.jpg"></li>
+     <li class="li-4 aa"><img id="pic5" src="images/胡歌5.jpg"></li>
+    </ul>
+   </div>
+
+  <script>
+  	//胡歌
+	function showHuGe(){
+    document.body.style.background="linear-gradient(to bottom right,yellow,red)";
+		var div2 = document.getElementById("div2");
+		div2.style.display = "none";
+		var div3 = document.getElementById("div3");
+		div3.style.display = "none";
+		var div1 = document.getElementById("div1");
+		div1.style.display = "block";
+    var box = document.getElementById("box");
+    box.style.display = "block";
+	var img1 = document.getElementById("img1");
+	img1.src="images/胡歌.jpg";
+	var introduce = document.getElementById("intro1");
+	introduce.innerHTML = "胡歌，1982年9月20日出生于上海市徐汇区，中国内地演员、歌手。1996年，14岁的胡歌便成为上海教育电视台的小主持人，2005年毕业于上海戏剧学院表演系，同年在仙侠剧《仙剑奇侠传》中塑造了“李逍遥”一角，并演唱该剧插曲《六月的雨》《逍遥叹》 [1-2]  。2006年8月遭受严重车祸，2007年6月复出 [3]  。2009年主演仙侠剧《仙剑奇侠传三》 [4]  。2010年主演的穿越剧《神话》在央视八套播出 [5]  。2011年参演历史题材电影《辛亥革命》提名大众电影百花奖“最佳新人奖” [6-7]  。2012年主演玄幻剧《轩辕剑之天之痕》 [8]  。2013年主演两部话剧，凭借《如梦之梦》获得北京丹尼国际舞台表演艺术奖“最佳男演员奖” [9]  。2014年参演战争剧《四十九日·祭》提名上海电视节白玉兰奖“最佳男配角奖” [10-11]  。2015年主演的谍战剧《伪装者》、古装剧《琅琊榜》、都市剧《大好时光》相继播出，获得中国电视剧飞天奖“优秀男演员提名奖”、上海电视节白玉兰奖“最佳男主角奖”、中国电视金鹰奖“观众喜爱的男演员奖”、中国金鹰电视艺术节“最具人气男演员奖”等奖项 [12-16]  。2016年成为上海旅游形象大使，登上央视春晚演唱歌曲《相亲相爱》 [17-18]  。2017年二度登上央视春晚演唱歌曲《在此刻》，获得共青团中央“全国向上向善好青年”崇义友善好青年称号，2018年凭借都市剧《猎场》二度提名上海电视节白玉兰奖“最佳男主角奖” [19-22]  。";
+
+	var point1 = document.getElementById("point1");
+	point1.innerHTML = "点击查看详情";
+	point1.href="https://baike.baidu.com/item/%E8%83%A1%E6%AD%8C/312718?fr=aladdin";
+
+	var pic1 = document.getElementById("pic1");pic1.src="images/胡歌1.jpg";
+	var pic2 = document.getElementById("pic2");pic2.src="images/胡歌2.jpg";
+	var pic3 = document.getElementById("pic3");pic3.src="images/胡歌3.jpg";
+	var pic4 = document.getElementById("pic4");pic4.src="images/胡歌4.jpg";
+	var pic5 = document.getElementById("pic5");pic5.src="images/胡歌5.jpg";
+	}
+	//赵丽颖
+	function showZhaoLiYing(){
+    document.body.style.background="linear-gradient(to bottom right,white,blue)";
+		var div2 = document.getElementById("div2");
+		div2.style.display = "none";
+		var div3 = document.getElementById("div3");
+		div3.style.display = "none";
+		var div1 = document.getElementById("div1");
+		div1.style.display = "block";
+    var box = document.getElementById("box");
+    box.style.display = "block";
+	var img1 = document.getElementById("img1");
+	img1.src="images/赵丽颖.jpg";
+	var introduce = document.getElementById("intro1");
+	introduce.innerHTML = "赵丽颖，1987年10月16日出生于河北省廊坊市，中国内地影视女演员。2006年，因获得雅虎搜星比赛冯小刚组冠军而进入演艺圈 [1]  ；同年，在冯小刚执导的广告片《跪族篇》中担任女主角 [2]  。2011年，因在古装剧《新还珠格格》中饰演晴儿一角而被观众认识 [3]  。2013年，凭借古装剧《陆贞传奇》获得更多关注。2014年10月，在第10届金鹰电视艺术节举办的投票活动中被选为“金鹰女神” [4]  ；12月，凭借都市爱情剧《杉杉来了》获得第5届国剧盛典内地最具人气女演员奖 [5]  ；同年，成立海润传媒赵丽颖工作室。2015年，主演的仙侠剧《花千骨》打破中国内地周播剧收视纪录 [6]  ，而其个人则凭借该剧先后获得第6届澳门国际电视节金莲花最佳女主角奖、第6届国剧盛典最具收视号召力演员奖、第22届上海电视节白玉兰奖最佳女主角奖提名、第28届中国电视金鹰奖观众喜爱的女演员奖 [7-9]  。2017年，凭借电影《乘风破浪》获得第24届北京大学生电影节最受大学生欢迎女演员奖 [10]  ；同年主演的古装剧《楚乔传》成为中国内地首部在播期间网络播放量突破400亿次的电视剧 [11]  。2018年，主演的都市剧《你和我的倾城时光》和古装剧《知否知否应是绿肥红瘦》相继播出 [12-13]  。";
+	var point1 = document.getElementById("point1");
+	point1.innerHTML = "点击查看详情";
+	point1.href="https://baike.baidu.com/item/%E8%B5%B5%E4%B8%BD%E9%A2%96";
+
+	var pic1 = document.getElementById("pic1");pic1.src="images/赵丽颖1.jpg";
+	var pic2 = document.getElementById("pic2");pic2.src="images/赵丽颖2.jpg";
+	var pic3 = document.getElementById("pic3");pic3.src="images/赵丽颖3.jpg";
+	var pic4 = document.getElementById("pic4");pic4.src="images/赵丽颖4.jpg";
+	var pic5 = document.getElementById("pic5");pic5.src="images/赵丽颖5.jpg";
+	}
+	//林俊杰
+	function showlinjunjie(){
+		document.body.style.background="linear-gradient(to bottom right,#99cc00,#cc6600)";
+		var div2 = document.getElementById("div2");
+		div2.style.display = "none";
+		var div3 = document.getElementById("div3");
+		div3.style.display = "none";
+		var div1 = document.getElementById("div1");
+		div1.style.display = "block";
+    var box = document.getElementById("box");
+    box.style.display = "block";
+	var img1 = document.getElementById("img1");
+	img1.src="images/林俊杰.jpg";
+	var introduce = document.getElementById("intro1");
+	introduce.innerHTML = "林俊杰（JJ Lin），1981年3月27日出生于新加坡，华语流行乐男歌手、词曲创作者、音乐制作人。2003年发行首张创作专辑《乐行者》 [1]  。2004年凭专辑《第二天堂》中的歌曲《江南》获得广泛关注 [2]  。2014年以专辑《因你而在》夺得第25届台湾金曲奖最佳国语男歌手奖[3]  。2016年以专辑《和自己对话》获得第27届台湾金曲奖最佳国语男歌手奖 [4]  ， 并推出个人首部音乐纪录片《听·见林俊杰》 [5]  。截止到2017年，已发行13张正式专辑，累计创作数百首歌曲。 2007年成立个人音乐制作公司JFJ Productions。2008年创立潮流品牌SMG。2016年获得国际汽车联盟（FIA）职业赛车执照 [6]  。2017年成立“SMG”电竞战队 [7]  。 2004年、2015年两度受邀演唱新加坡国庆庆典主题曲 [8]  ，担任2008年北京奥运会 [9]  及2010年新加坡青奥会 [10]  火炬手，创作并演唱2010年上海世博会新加坡馆主题曲《感动每一刻》 [11]  。凭借在音乐创作与慈善公益事业等方面的表现，2009年荣获新加坡杰出青年奖 [12]  ，2014年获得第5届通商中国青年奖 [13]  。 2018年10月，三度担任浙江卫视音乐综艺节目《梦想的声音第三季》常驻梦想导师。 [14-15]";
+	var point1 = document.getElementById("point1");
+	point1.innerHTML = "点击查看详情";
+	point1.href="https://baike.baidu.com/item/%E6%9E%97%E4%BF%8A%E6%9D%B0/131821?fr=aladdin";
+  var pic1 = document.getElementById("pic1");pic1.src="images/林俊杰1.jpg";
+	var pic2 = document.getElementById("pic2");pic2.src="images/林俊杰2.jpg";
+	var pic3 = document.getElementById("pic3");pic3.src="images/林俊杰3.jpg";
+	var pic4 = document.getElementById("pic4");pic4.src="images/林俊杰4.jpg";
+	var pic5 = document.getElementById("pic5");pic5.src="images/林俊杰5.jpg";
+	}
+	//偏爱
+	function showSong1(){
+	 var div1 = document.getElementById("div1");
+		div1.style.display = "none";
+		var div3 = document.getElementById("div3");
+		div3.style.display = "none";
+		var div2 = document.getElementById("div2");
+		div2.style.display="block";
+    var box = document.getElementById("box");
+    box.style.display = "none"
+		var img2 = document.getElementById("img2");
+	img2.src="images/张芸京.png";
+	var mp3 = document.getElementById("mp3");
+	mp3.src = "songs/偏爱-张芸京.mp3";
+	var solution = document.getElementById("solution");
+	solution.href = "https://search.bilibili.com/all?keyword=%E5%81%8F%E7%88%B1&from_source=banner_search";
+	}
+	//我们的爱
+	function showSong2(){
+	var div1 = document.getElementById("div1");
+		div1.style.display = "none";
+		var div3 = document.getElementById("div3");
+		div3.style.display = "none";
+		var div2 = document.getElementById("div2");
+		div2.style.display="block";
+    var box = document.getElementById("box");
+    box.style.display = "none"
+		var img2 = document.getElementById("img2");
+	img2.src="images/我们的爱.jpg";
+	var mp3 = document.getElementById("mp3");
+	mp3.src = "songs/F.I.R.+-+我们的爱.mp3";
+	var solution = document.getElementById("solution");
+	solution.href = "https://www.bilibili.com/video/av21425172?from=search&seid=1031206723964955304";
+
+	}
+	//踏浪
+	function showSong3(){
+	var div1 = document.getElementById("div1");
+		div1.style.display = "none";
+		var div3 = document.getElementById("div3");
+		div3.style.display = "none";
+		var div2 = document.getElementById("div2");
+		div2.style.display="block";
+		var img2 = document.getElementById("img2");
+    var box = document.getElementById("box");
+    box.style.display = "none"
+	img2.src="images/踏浪.jpg";
+	var mp3 = document.getElementById("mp3");
+	mp3.src = "songs/踏浪-徐怀钰.mp3";
+	var solution = document.getElementById("solution");
+	solution.href = "https://www.bilibili.com/video/av9314917?from=search&seid=5491836771595348742";
+	}
+	//峨眉山
+	var locate="https://baike.baidu.com/item/%E5%B3%A8%E7%9C%89%E5%B1%B1/2676";
+	function showlandscape1()
+	{
+		document.body.style.background="linear-gradient(to bottom right,#ff9933,white)";
+		var div1 = document.getElementById("div1");
+		div1.style.display = "none";
+		var div2 = document.getElementById("div2");
+		div2.style.display = "none";
+		var div3 = document.getElementById("div3");
+		div3.style.display="block";
+    var box = document.getElementById("box");
+    box.style.display = "block";
+		var img3 = document.getElementById("img3");
+		img3.title="点击查看更多关于 峨眉山 的信息";
+		img3.src="images/峨眉山.jpg";
+		locate="https://baike.baidu.com/item/%E5%B3%A8%E7%9C%89%E5%B1%B1/2676";
+    var pic1 = document.getElementById("pic1");pic1.src="images/峨眉山1.jpg";
+  	var pic2 = document.getElementById("pic2");pic2.src="images/峨眉山2.png";
+  	var pic3 = document.getElementById("pic3");pic3.src="images/峨眉山3.png";
+  	var pic4 = document.getElementById("pic4");pic4.src="images/峨眉山4.png";
+  	var pic5 = document.getElementById("pic5");pic5.src="images/峨眉山5.png";
+	}
+	function goemeishan()
+	{
+		window.open(locate,"view_window");
+	}
+	//九寨沟
+	function showlandscape2()
+	{
+		document.body.style.background="linear-gradient(to bottom right,#99ff00,red)";
+		var div1 = document.getElementById("div1");
+		div1.style.display = "none";
+		var div2 = document.getElementById("div2");
+		div2.style.display = "none";
+		var div3 = document.getElementById("div3");
+		div3.style.display="block";
+    var box = document.getElementById("box");
+    box.style.display = "block";
+		var img3 = document.getElementById("img3");
+		img3.title="点击查看更多关于 九寨沟 的信息";
+		img3.src="images/九寨沟.jpg";
+		locate="https://baike.baidu.com/item/%E5%9B%9B%E5%B7%9D%E4%B9%9D%E5%AF%A8%E6%B2%9F%E9%A3%8E%E6%99%AF%E5%8C%BA/15751780";
+    var pic1 = document.getElementById("pic1");pic1.src="images/九寨沟1.jpg";
+  	var pic2 = document.getElementById("pic2");pic2.src="images/九寨沟2.jpg";
+  	var pic3 = document.getElementById("pic3");pic3.src="images/九寨沟3.jpg";
+  	var pic4 = document.getElementById("pic4");pic4.src="images/九寨沟4.jpg";
+  	var pic5 = document.getElementById("pic5");pic5.src="images/九寨沟5.jpg";
+	}
+	//长城
+	function showlandscape3()
+	{
+		var div1 = document.getElementById("div1");
+		div1.style.display = "none";
+		var div2 = document.getElementById("div2");
+		div2.style.display = "none";
+		var div3 = document.getElementById("div3");
+		div3.style.display="block";
+    var box = document.getElementById("box");
+    box.style.display = "block";
+		var img3 = document.getElementById("img3");
+		img3.title="点击查看更多关于 长城 的信息";
+		img3.src="images/长城.jpg";
+		locate="https://baike.baidu.com/item/%E9%95%BF%E5%9F%8E/14251?fromtitle=%E4%B8%87%E9%87%8C%E9%95%BF%E5%9F%8E&fromid=35257";
+    var pic1 = document.getElementById("pic1");pic1.src="images/长城1.jpg";
+  	var pic2 = document.getElementById("pic2");pic2.src="images/长城2.jpg";
+  	var pic3 = document.getElementById("pic3");pic3.src="images/长城3.jpg";
+  	var pic4 = document.getElementById("pic4");pic4.src="images/长城4.jpg";
+  	var pic5 = document.getElementById("pic5");pic5.src="images/长城5.jpg";
+	}
+  function Time_Dancing()
+  {
+    window.open("../Time_Dancing/index.html","view_window");
+  }
+  </script>
+
+
+ <script type="text/javascript">
+ var box = document.getElementById("box");
+ var ul = box.children[0];
+ var num = 0;
+ timer = setInterval(fn,10);
+ function fn() {
+  num--;
+  num <= -2400 ? num = 800 : num;
+  ul.style.left = num + "px";
+ }
+</script>
+
+</body>
+
+</html>

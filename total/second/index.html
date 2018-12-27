@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<title>教育经历</title>
+<!--css-->
+<link rel="stylesheet" href="css/timeline.css">
+<style>
+body{background}
+</style>
+</head>
+<body >
+<div align="center" style="background:#60C;height:70px;font-size:48px;"><p style="font-family:'楷体'">教育经历</p></div>
+<!--html-->
+<div id="timeLine">
+<ul id="yearList">
+	<li class="year-active">2003.9-2009.6<i class="year-dot"></i></li>
+	<li>2009.9-2012.6<i class="year-dot"></i></li>
+	<li>2012.9-2015.6<i class="year-dot"></i></li>
+	<li>2015.9-至今<i class="year-dot"></i></li>
+
+</ul>
+<div class="dotted-line"></div>
+
+<div id="cList">
+	<a href="#" id="btnLeft">&lt;</a>
+	<div style="width: 850px;margin: 0 auto; overflow: hidden">
+		<ul id="cUl">
+			<li>
+				<span class="li-tit">1</span>
+				<div class="container-li">
+					<div class="c-li-left">
+						<img src="images/a1.png" alt="">
+					</div>
+					<div class="c-li-right">
+						<p>2003.9-2006.1,就读于重庆市万州区燕山乡长柏村希望小学.<p>
+						<p>2006.3-2009.6,就读于重庆市万州区燕山中学.</p>
+						<p>不得不说，小学的上学条件还是比较艰苦的，我在三年级的时候就到镇上的学校寄宿了，当时非常不习惯，不过后来慢慢地和同学搞好关系逐渐适应了这种条件。还有一件事，我小学好像没有迟到过，哈哈。</p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<span class="li-tit">2</span>
+				<div class="container-li">
+					<div class="c-li-left">
+						<img src="images/万中.jpg" alt="">
+					</div>
+					<div class="c-li-right" id="wz">
+						<p>2009.9-2012.6,就读于重庆市万州高级中学.</p>
+						<p align="center">老师在毕业时送给我们的诗</p>
+						<p>扬子江边，学府广场，书声朗朗。聚四海学子，修身习礼；三载奋斗，一朝铿锵。巾帼逐智，须眉强壮，今非昔比皆成长，好儿郎。展壮丽图画，还需去闯！</p>
+						<p>诸君前程锦绣，唯诚恳求学是坦途。叹为师愚昧，见闻有疆；穿针引线，只做嫁裳；投庙八方，高人定在，蔽开胸怀习绝唱。天桥上，谈别后岁月，要有主张。</p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<span class="li-tit">3</span>
+				<div class="container-li">
+					<div class="c-li-left">
+						<img src="images/万二中.jpg" alt="">
+					</div>
+					<div class="c-li-right">
+						<p>2012.9-2015.6,就读于重庆市万州第二高级中学<p>
+						<p>我高中算是一个比较努力的人，但也是那种不会提高效率的人，当时并没发现这一点，知识的漏洞日积月累，到高三后期，学习就像病人病入膏肓一样，没办法改进。我们化学老师说，基础不牢，地动山摇！我是真的领悟到这句话了。不过学习之路还没结束，一切貌似还可以弥补。</p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<span class="li-tit">4</span>
+				<div class="container-li">
+					<div class="c-li-left">
+						<img src="images/重庆交通大学.jpg" alt="">
+					</div>
+					<div class="c-li-right">
+						<p>2015.9-至今,就读于重庆交通大学<p>
+						<p>在大学里面，我见到了乐于助人的好朋友以及热爱学习的好同学。我看到了他们的优点，学到了他们的方法，我也慢慢地变得像他们一样更加有毅力。就像初中班主任送给我们的诗句一样，高人定在，我仍需继续保持谦虚的态度，不断达到他们的高度.</p>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<a href="#" id="btnRight">&gt;</a>
+</div>
+</div>
+
+<div align="center">
+<select id="link1" onchange="gotolink();">
+	<option value="other">其他链接</a>
+	<option value="重庆交通大学">重庆交通大学</option>
+	<option value="百度地图">百度地图</option>
+	<option value="国家基础地理信息中心">国家基础地理信息中心</option>
+</select>
+</div>
+
+<script type="text/javascript">
+	function gotolink(){
+		var s = document.getElementById('link1');
+		var index = s.selectedIndex;
+		if(index==1)
+		{
+			window.open("http://www.cqjtu.com/");
+		}
+		else if(index==2){
+			window.open("https://map.baidu.com/");
+		}
+		else if(index==3){
+			window.open("http://www.ngcc.cn/");
+		}
+	}
+
+</script>
+
+<!--js-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-timeLine.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#timeLine").timeLine({
+		w:850  //每一个li的宽度
+//            btnPrev:"#btnLeft",      //上一个按钮
+//            btnNext: "#btnRight",  //下一个按钮
+//            dateBox:"#yearList", //日期的ul盒子
+//            dateArr: "#yearList li", //保存每一个日期的数组
+//            conBox:"#cUl",  //保存切换内容的ul盒子
+//            conArr:"#cUl li" //保存每一个内容的数
+	});
+});
+</script>
+
+<div style="text-align:center;clear:both;">
+
+</div>
+
+</body>
+</html>

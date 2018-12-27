@@ -1,0 +1,13 @@
+h1{
+  width: 100%;
+  position: relative;
+  color:green;
+  font-family: "STKaiti";
+}
+h1::before{
+  content:attr(text);
+  position: absolute;
+  z-index: 10;
+  color:blue;
+  -webkit-mask:linear-gradient(to left,red,transparent);
+}

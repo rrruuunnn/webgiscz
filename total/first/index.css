@@ -1,0 +1,14 @@
+.jzself
+{
+  width: 40%;
+  height:40px;
+  background: blue;
+  margin: 0 auto;
+}
+.jzcontent{
+  margin: 0 auto;
+  text-align: center;
+  width: 40%;
+  height: 100px;
+  line-height: 100px;
+}

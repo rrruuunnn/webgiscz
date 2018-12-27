@@ -1,0 +1,36 @@
+.title{
+  text-align: center;
+  font-size: 41px;
+  color: blue;
+  font-family: "STKaiti";
+}
+.text{
+  width: 800px;
+  height: 738px;
+  margin: 0 auto;
+}
+.intro1{
+  position: relative;
+  margin-top: 150px;
+  font-size: 20px;
+  font-family: "STKaiti"
+}
+.intro2{
+  position: relative;
+  margin-top: 170px;
+  font-size: 20px;
+  font-family: "STKaiti"
+}
+.intro3{
+  position: relative;
+  margin-top: 70px;
+  font-size: 20px;
+  font-family: "STKaiti"
+}
+.art1{
+  text-align: left;
+}
+#int1{
+  font-size: 20px;
+  font-family: "STKaiti"
+}

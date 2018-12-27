@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>陈真主页</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="个人介绍.css">
+    <div><canvas class="rain" id="canvas" ></canvas></div>
+    <img name="MainPicture" src="1091.jpg" alt="陈真" width="450" style="position:absolute; left:505px; bottom:230px;">
+    <div id="zhuye">
+    <marquee  direction="left"  behavior="scroll"  scrollamount="1" scrolldelay="1/60"  loop="-1"  bgcolor="pink"  hspace="457"   vspace="0">
+    	<font  face="隶书"  color="red"  size="5">欢迎来到陈真的主页 Welcome to homepage of ChenZhen</font>
+    </marquee>
+  </div>
+  <div id="parts">
+    <ul>
+      <li id="a"><img src="个人简介.JPG" alt="个人简介" onclick="openfirst();"></li>
+      <li id="b"><img src="学习经历.JPG" alt="学习经历" onclick="opensecond();"></li>
+      <li id="c"><img src="兴趣爱好.JPG" alt="兴趣爱好" onclick="openthird();"></li>
+      <li id="d"><img src="我的家乡.JPG" alt="我的家乡" onclick="openforth();"></li>
+    </ul>
+  </div>
+    <script type="text/javascript">
+
+
+      /*
+        1、让canvas元素和浏览器窗口宽高一致
+          1.1、获取canvas元素
+          1.2、获取浏览器窗口宽高，存起来
+          1.3、给canvas设置一个宽高
+          1.4、当浏览器窗口宽高发生改变时，需要重新设置canvas的宽高
+        2、如何使用canvas绘制图形
+          如何绘制圆形、矩形
+          2.1、获取canvas上面的可绘制区域
+          2.2、拿取一支笔，并蘸上有颜色的墨水
+          2.3、下笔作画
+        3、如何绘制一个会动的图形
+          动画：1S之内播放多张图片，就能实现动画效果
+          1S内画60帧
+          定时器：
+        4、绘制会动的雨滴
+        5、绘制250个会动的雨滴 （200毫秒一滴雨）
+      */
+      //1
+      var canvas = document.querySelector(".rain");//通过class类选取 !!!必须是<.rain>不能漏掉"."
+      var w,h;
+      ~~function setSize(){
+        window.onresize=arguments.callee;
+        w=window.innerWidth;//获取浏览器窗口宽高
+        h=window.innerHeight/1.5;
+        canvas.width=w;
+        canvas.height=h;
+      }();
+      //2
+      var canCon = canvas.getContext("2d");//可绘制区域
+      var aRain = [];//存放小雨滴
+      /*
+      canCon.fillStyle="red";
+      canCon.rect(100,50,200,300);//想象一个矩形：左上角坐标 x,y,w,h宽高
+      canCon.fill();//下笔画画 fill是画实心图形  stroke是画空心图形
+      canCon.strokeStyle="blue";
+      //canCon.rect(200,300,200,300);
+      canCon.arc(200,200,50,0,Math.PI*2);//画圆形
+      canCon.stroke();
+      */
+      //3 动画开始
+      /*
+      var y=100;
+      setInterval(function(){
+        canCon.beginPath();//笔抬起来
+        canCon.clearRect(0,0,w,h);
+        canCon.strokeStyle="blue";
+        canCon.rect(200,y++,200,300);
+        canCon.stroke();
+      },1000/60);//每个**ms执行一次function  (定时器)
+      */
+      //4 绘制雨滴
+      /*
+      var y=0;
+      setInterval(function(){
+        canCon.beginPath();//笔抬起来
+        //canCon.clearRect(0,0,w,h);不擦
+
+        //加一层蒙板
+        canCon.fillStyle="rgba(0,0,0,0.05)";
+        canCon.fillRect(0,0,w,h);//想像并画出一个矩形
+
+        canCon.fillStyle="white";
+        canCon.fillRect(200,y++,2,10);
+      },1000/60);//每个**ms执行一次function  (定时器)
+      */
+      //5 创造雨的对象
+
+      function random(min,max){
+        //返回min-max的值
+        return Math.random()*(max-min)+min;
+      };
+      function Rain(){
+
+      };
+      Rain.prototype={
+        init:function(){
+          this.x=random(0,w);//从0-w
+          this.y=0;//小雨滴新生成的xy位置
+          this.vY=random(4,5);
+          this.h=random(0.8,0.9)*h;//小雨滴生成水花的位置
+          this.r=1;//圆刚开始的半径
+          this.vr=1;//雨滴半径扩大的速度
+        },
+        draw:function(){
+            if(this.y<this.h){
+            canCon.beginPath();
+            canCon.fillStyle="white";
+            canCon.fillRect(this.x,this.y,2,10);
+          }else {
+            canCon.beginPath();
+            canCon.strokeStyle="white";
+            canCon.arc(this.x,this.y,this.r,0,Math.PI*2);//画圆形
+            canCon.stroke();
+          }
+          },
+        move:function(){
+          if(this.y<this.h){
+            this.y+=this.vY;//雨滴每秒钟下降4-5
+          }
+          else{
+            if(this.r<80){
+            this.r+=this.vr;
+          }else{
+            this.init();
+          }
+          }
+          this.draw();//把移动的雨滴
+        }
+      };
+
+      function createRain(num){
+        for(var i=0;i<num;i++)
+        {
+          setTimeout(function(){
+            var rain = new Rain();//创建一个新的Rain对象
+            rain.init();
+            rain.draw();
+            aRain.push(rain);
+          },250*i)//在250毫秒以后执行function
+        }
+      }
+      createRain(66);
+      setInterval(function(){
+        canCon.fillStyle="rgba(0,0,0,0.05)";
+        canCon.fillRect(0,0,w,h);
+        for(var item of aRain){
+          //for of:item 变量指的是数组里的每一个元素
+          //for in:item 变量指的是数组里每一个元素的下标（包括圆型链上可遍历的元素）
+          item.move();
+        }
+      },1000/60);
+    </script>
+	<script>
+	function openfirst(){window.open("../first/index.html");}
+	function opensecond(){
+	//window.location.href="V:/Atom/123/total/second/index.html";	
+	window.open("../second/index.html");
+	}
+	function openthird(){
+	//window.location="V:/Atom/123/total/third/index.html";
+	window.open("../third/index.html");
+	}
+	function openforth(){
+	window.open("../forth/index.html");
+	}
+	</script>
+  </body>
+</html>
+<!--
+  250滴雨的位置怎么确定？
+  面向对象的方式来写：
+-->

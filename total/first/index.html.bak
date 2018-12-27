@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>个人简介</title>
+    <link rel="stylesheet" href="个人简介.css">
+    <style>
+      .tab{text-align: center;}
+      #introduce{font-size: 30px;font-family: "STKaiti";}
+    </style>
+  </head>
+  <body>
+    <table border="1" align="center" width="600px" cellpadding="2" cellspacing="0">
+      <tr>
+        <td id="introduce" align="center" height="60">个人简介</td>
+      </tr>
+    </table >
+    <table class="tab" width="600px" border="1" cellpadding="1" cellspacing="2" align="center">
+      <tr>
+        <td class="tab" width="10%">姓  名</td>
+        <td width="10%" class="tab">陈  真</td>
+        <td class="tab" width="10%">出生日期</td>
+        <td width="10%" class="tab">1997.12</td>
+        <td class="tab" colspan="" rowspan="5" class="tab" width="10%"><img src="陈真.jpg"></td>
+      </tr>
+      <tr>
+        <td class="tab">民  族</td>
+        <td class="tab">汉</td>
+        <td class="tab1">身  高</td>
+        <td class="tab">173</td>
+      </tr>
+      <tr>
+        <td class="tab">电  话</td>
+        <td class="tab">15223551541</td>
+        <td class="tab">政治面貌</td>
+        <td class="tab">共青团员</td>
+      </tr>
+      <tr>
+        <td class="tab"> QQ </td>
+        <td class="tab">2475134154</td>
+        <td class="tab">就读院校</td>
+        <td class="tab">重庆交通大学</td>
+
+      </tr>
+      <tr>
+        <td class="tab">住  址</td>
+        <td class="tab"><a href="" target="view_window">重庆市万州区</a></td>
+        <td class="tab">学  历</td>
+        <td class="tab">本  科</td>
+      </tr>
+      <tr>
+        <td class="tab" rowspan="4">教育背景</td>
+        <td class="tab" colspan="1">2003.9-2009.6</td>
+        <td class="tab" colspan="2">重庆市万州区燕山中学</td>
+        <td class="tab" colspan="1">语文、数学</td>
+      </tr>
+      <tr>
+        <td class="tab" colspan="1">2009.9-2012.6</td>
+        <td class="tab" colspan="2">重庆市万州高级中学</td>
+        <td class="tab" colspan="1">语数外物化生</td>
+      </tr>
+      <tr>
+        <td class="tab" colspan="1">2012.9-2015.6</td>
+        <td class="tab" colspan="2">重庆市万州第二高级中学</td>
+        <td class="tab" colspan="1">语数外物化生</td>
+      </tr>
+      <tr>
+        <td class="tab" colspan="1">2015.9-至今</td>
+        <td class="tab" colspan="1"><a href="http://www.cqjtu.com/" target="view_window">重庆交通大学</a></td>
+        <td class="tab" colspan="2">数学、英语、测绘学</td>
+      </tr>
+      <tr>
+        <td class="tab" rowspan="7">技能证书</td>
+      </tr>
+      <tr>
+        <td class="tab" colspan="5">国家奖学金</td>
+      </tr>
+      <tr>
+        <td class="tab" colspan="5">全国大学生测绘技能大赛 程序设计 一等奖</td>
+      </tr>
+      <tr>
+        <td class="tab" colspan="5">英语四、六级证书</td>
+      </tr>
+      <tr>
+        <td class="tab" colspan="5">全国计算机二级证书</td>
+      </tr>
+      <tr>
+        <td class="tab" colspan="5">重庆交通大学 三好学生 证书</td>
+      </tr>
+      <tr>
+        <td class="tab" colspan="5">重庆交通大学第三届“中纬杯”测量技能大赛二等奖</td>
+      </tr>
+      <tr>
+        <td class="tab"rowspan="2">自我评价</td>
+      </tr>
+      <tr>
+        <td class="tab" colspan="5">千里之行，始于足下。厚积薄发，少些抱怨，多些信心才是根本。</td>
+      </tr>
+    </table>
+</html>
